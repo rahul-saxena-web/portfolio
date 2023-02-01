@@ -1,0 +1,248 @@
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        #temp {
+            margin-right: auto;
+        }
+        
+        #nav-box {
+            position: sticky !important;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        nav {
+            font-family: 'Fredoka One', cursive;
+            font-size: 25px;
+        }
+        
+        #logo {
+            cursor: pointer;
+        }
+        
+        nav div #list {
+            display: flex;
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        div #list li a:link,
+        div #list li a:visited {
+            text-decoration: none;
+            margin: 0px 26px;
+            color: #737580;
+            transition: color 0.3s;
+        }
+        
+        div #list li a:active {
+            color: #36373a;
+        }
+        
+        div #list li a:hover {
+            color: #36373a;
+        }
+        
+        #home {
+            background-color: #b4b5d1;
+        }
+        
+        section figure {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 30px;
+        }
+        
+        section figure img {
+            margin-top: 30px;
+            border-radius: 50%;
+        }
+        
+        section figure figcaption {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3vw;
+            color: white;
+            font-size: 32px;
+        }
+        
+        .heading {
+            font-family: 'Fredoka One', cursive;
+            text-align: center;
+        }
+        
+        #about {
+            display: flex;
+            padding: 10px;
+        }
+        
+        #about-me div {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+        
+        #my-intro {
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            word-spacing: 1px;
+        }
+        
+        abbr {
+            display: inline;
+            text-decoration: none !important;
+            cursor: pointer !important;
+        }
+        
+        .languages {
+            background-color: black;
+            margin: 5px;
+            color: white;
+            padding: 10px 18px;
+            width: 250px;
+            text-align: center;
+            border-left: 10px solid grey;
+            font-family: 'Fredoka One', cursive;
+        }
+        
+        #projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin-bottom: 15px;
+        }
+        
+        #project-links {
+            border: 2px solid grey;
+            border-radius: 8px 2px 2px 8px;
+            height: 300px !important;
+            overflow: auto !important;
+            margin: 10px;
+            width: 30%;
+        }
+        
+        #project-links ul {
+            list-style: none;
+        }
+        
+        #project-links ul a {
+            text-decoration: none;
+            border-bottom: 1px solid grey;
+            display: block;
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Fredoka One', cursive;
+            transition: background-color 0.2s, font-size 0.2s;
+            color: black;
+        }
+        
+        #project-links ul a:hover {
+            background-color: #a5a6ac;
+            color: white;
+            font-size: 23px;
+        }
+        
+        #no-border {
+            border-bottom: 0px !important;
+        }
+        
+        #project-views {
+            width: 60%;
+            margin: 10px;
+            overflow: inherit;
+            border: 10px inset #b4b5d1;
+            box-shadow: 0px 0px 15px 3px;
+        }
+        
+        .carousel {
+            min-width: 80%;
+        }
+        
+        .card-title {
+            font-family: 'Fredoka One', cursive;
+        }
+        
+        #extras {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .extras-books {
+            font-family: 'Fredoka One', cursive;
+        }
+        
+        #footer-body {
+            font-family: 'Fredoka One', cursive;
+            color: #737580;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 15px;
+            font-size: 20px;
+        }
+        
+        #small-foot {
+            display: none;
+        }
+        
+        @media only screen and (max-width:991px) {
+            nav div #list {
+                flex-direction: column;
+            }
+            div #list li {
+                margin: 12px -25px;
+            }
+            #temp {
+                margin-right: 0px;
+            }
+        }
+        
+        @media only screen and (max-width:768px) {
+            #about {
+                flex-direction: column;
+            }
+            #about-me {
+                padding-bottom: 10px;
+            }
+            section #my-skills {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding-bottom: 15px;
+            }
+            #projects {
+                flex-direction: column;
+            }
+            #project-links {
+                width: 90%;
+                margin: auto;
+            }
+            #project-views {
+                width: 90%;
+                margin: 20px auto;
+            }
+            .carousel {
+                width: 100%;
+            }
+            .extra-book {
+                width: 100% !important;
+            }
+            .card-body h5 {
+                font-size: 25px !important;
+            }
+            #big-foot {
+                display: none;
+            }
+            #small-foot {
+                display: contents;
+            }
+        }
