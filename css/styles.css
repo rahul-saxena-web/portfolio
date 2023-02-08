@@ -8,7 +8,7 @@
             scroll-behavior: smooth;
         }
         
-         ::selection {
+        ::selection {
             color: white;
             background-color: #737580;
         }
