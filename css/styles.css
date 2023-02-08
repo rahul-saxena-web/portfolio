@@ -8,6 +8,11 @@
             scroll-behavior: smooth;
         }
         
+         ::selection {
+            color: white;
+            background-color: #737580;
+        }
+        
         #temp {
             margin-right: auto;
         }
@@ -85,6 +90,10 @@
             padding: 10px;
         }
         
+        #about-me {
+            margin: 10px;
+        }
+        
         #about-me div {
             display: flex;
             justify-content: space-evenly;
@@ -95,6 +104,7 @@
             font-family: 'Roboto Slab', serif;
             font-size: 20px;
             word-spacing: 1px;
+            text-align: justify;
         }
         
         abbr {
@@ -244,5 +254,8 @@
             }
             #small-foot {
                 display: contents;
+            }
+            .hide-img {
+                display: none;
             }
         }
