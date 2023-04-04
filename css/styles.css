@@ -123,6 +123,12 @@
             border-left: 10px solid grey;
             font-family: 'Fredoka One', cursive;
         }
+
+       .languages.new-language {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
         
         #projects {
             display: flex;
